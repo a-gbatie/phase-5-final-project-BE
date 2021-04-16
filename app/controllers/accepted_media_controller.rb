@@ -16,6 +16,7 @@ class AcceptedMediaController < ApplicationController
   # POST /accepted_media
   def create
     @accepted_medium = AcceptedMedium.new(accepted_medium_params)
+    byebug
 
     if @accepted_medium.save
       render json: @accepted_medium, status: :created, location: @accepted_medium
@@ -46,6 +47,6 @@ class AcceptedMediaController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def accepted_medium_params
-      params.require(:accepted_medium).permit(:user_id, :media_id)
+      params.require(:accepted_medium).permit(:user_id, :medium_id)
     end
 end

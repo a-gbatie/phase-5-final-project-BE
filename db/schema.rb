@@ -10,18 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_09_184759) do
+ActiveRecord::Schema.define(version: 2021_04_16_172248) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "accepted_media", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.bigint "media_id", null: false
+    t.bigint "medium_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["media_id"], name: "index_accepted_media_on_media_id"
+    t.index ["medium_id"], name: "index_accepted_media_on_medium_id"
     t.index ["user_id"], name: "index_accepted_media_on_user_id"
+  end
+
+  create_table "friend_requests", force: :cascade do |t|
+    t.integer "requestor_id"
+    t.integer "receiver_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "friendships", force: :cascade do |t|
@@ -42,12 +49,15 @@ ActiveRecord::Schema.define(version: 2021_04_09_184759) do
     t.text "starring"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "seasons"
+    t.integer "platform_id"
   end
 
   create_table "platforms", force: :cascade do |t|
     t.string "company"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image"
   end
 
   create_table "user_platforms", force: :cascade do |t|
@@ -67,7 +77,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_184759) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "accepted_media", "media", column: "media_id"
+  add_foreign_key "accepted_media", "media"
   add_foreign_key "accepted_media", "users"
   add_foreign_key "user_platforms", "platforms"
   add_foreign_key "user_platforms", "users"

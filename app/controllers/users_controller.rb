@@ -25,7 +25,10 @@ class UsersController < ApplicationController
     end
   end
 
-
+  def profile
+    render json: { user: UserSerializer.new(current_user) }, status: :accepted
+  end
+  
   # PATCH/PUT /users/1
   def update
     if @user.update(user_params)
@@ -48,6 +51,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :username, :password_digest)
+      params.require(:user).permit(:name, :username, :password)
     end
 end

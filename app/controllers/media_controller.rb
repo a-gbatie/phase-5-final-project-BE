@@ -3,7 +3,13 @@ class MediaController < ApplicationController
 
   # GET /media
   def index
-    @media = Medium.all
+    platform = Platform.find_by(company: params[:platform])
+    if platform 
+      @media = platform.media
+    else
+      @media = Medium.all
+    end
+    
 
     render json: @media
   end
@@ -15,6 +21,7 @@ class MediaController < ApplicationController
 
   # POST /media
   def create
+    
     @medium = Medium.new(medium_params)
 
     if @medium.save

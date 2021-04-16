@@ -1,3 +1,3 @@
 class PlatformSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :image, :company
 end
