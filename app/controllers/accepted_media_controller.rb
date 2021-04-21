@@ -16,7 +16,6 @@ class AcceptedMediaController < ApplicationController
   # POST /accepted_media
   def create
     @accepted_medium = AcceptedMedium.new(accepted_medium_params)
-    byebug
 
     if @accepted_medium.save
       render json: @accepted_medium, status: :created, location: @accepted_medium
