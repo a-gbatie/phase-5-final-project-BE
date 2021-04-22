@@ -39,7 +39,7 @@ media = [
         "title": 'The Vampire Diaries',
         "genre": 'Drama',
         "is_movie": 'false',
-        "image": 'https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_UY268_CR0,0,182,268_AL_.jpg',
+        "image": 'https://www.teahub.io/photos/full/15-159803_the-vampire-diaries-hd-wallpapers-desktop-wallpaper-vampire.jpg',
         # "release_date": 'nil'
         "network": 'CW',
         "description": 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakable horror lurk beneath this town as a teenage girl is suddenly torn between two vampire brothers.',
@@ -349,7 +349,7 @@ media = [
         "title": 'The Expanse',
         "genre": 'Sci-Fi',
         "is_movie": 'false',
-        "image": 'https://static.wikia.nocookie.net/expanse/images/f/f4/The_Expanse_S4_twitter_poster-Dec13-811x1200.jpg/revision/latest?cb=20191206024642',
+        "image": 'https://theexpanselives.com/wp-content/uploads/2019/07/expanse_S4_fhd-2.png',
         # "release_date": 'nil'
         "network": 'Amazon Original',
         "description": "In the 24th century, a disparate band of antiheroes unravel a vast conspiracy that threatens the Solar System's fragile state of cold war.",
@@ -569,7 +569,7 @@ media = [
         "title": "Rodgers & Hammerstein's: Cinderella",
         "genre": 'Romance',
         "is_movie": 'true',
-        "image": 'https://static.wikia.nocookie.net/disney/images/8/8c/Rodgers_%26_Hammerstein%27s_Cinderella.jpg/revision/latest?cb=20160124172703',
+        "image": 'https://www.etonline.com/sites/default/files/images/2021-02/cinderella_rodgers_and_hammersteinskeystoneskey_artpsddeltaallp712000_x_2818182590_final.jpg',
         "release_date": '1997',
         # "network": 'CW',
         "description": "Although mistreated by her cruel stepmother and stepsisters, Cinderella is able to attend the royal ball through the help of a fairy godmother.",
@@ -686,7 +686,7 @@ media = [
         "title": "Sex and the City",
         "genre": 'Drama',
         "is_movie": 'false',
-        "image": 'https://www.themoviedb.org/t/p/original/ktvj97y77yJCWZhFcYbAkzLrTAt.jpg',
+        "image": 'https://i0.wp.com/www.irishfilmcritic.com/wp-content/uploads/2021/02/sex-and-the-city-561109b3e0a21.jpg?resize=718%2C1024&ssl=1',
         # "release_date": 'nil'
         "network": 'HBO',
         "description": "Four female New Yorkers gossip about their sex lives (or lack thereof) and find new ways to deal with being a woman in the late 1990s.",

@@ -31,6 +31,11 @@ class MediaController < ApplicationController
     end
   end
 
+  def random 
+    media = Medium.order("RANDOM()").first
+    render json: media
+  end
+
   # PATCH/PUT /media/1
   def update
     if @medium.update(medium_params)
